@@ -21,7 +21,7 @@ figlet "Instalando o driver da impressora"
 sudo -S apt update
 sudo -S apt install -y printer-driver-escpr
 
-read -p "Você deseja instalar GIMP, Visual Studio e Kdenlive? [s/n]: " choice
+read -p "Você deseja instalar GIMP, Visual Studio, Kdenlive, shotcut e shotwell ? [s/n]: " choice
 if [[ "$choice" == [Ss]* ]]; then
   figlet "Instalando gimp"
   sudo -S apt install -y gimp
@@ -33,6 +33,12 @@ if [[ "$choice" == [Ss]* ]]; then
 
   figlet "Instalando kdenlive"
   sudo -S apt install -y kdenlive
+  
+  figlet "Instalando shotcut e shotwell"
+  sudo -S apt install -y shotcut
+  sudo -S apt install -y shotwell
+  
 fi
 
-echo “Ajustes finalizados…”
+figlet “Ajustes finalizados…”
+figlet "Não se esqueça de instalar o gerenciador de extensões - o draw on your screen (windows+alt+d) "
