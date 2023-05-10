@@ -40,6 +40,9 @@ if [[ "$choice" == [Ss]* ]]; then
   
 fi
 
+read -p "Qual é o número da etiqueta ?: " hots
+hostname "lenovo-v14-$hots"
+
 figlet "ajustes finalizados"
 echo "Não se esqueça de instalar o gerenciador de extensões - o draw on your screen (windows+alt+d) "
 
