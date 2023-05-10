@@ -40,10 +40,10 @@ if [[ "$choice" == [Ss]* ]]; then
   
 fi
 
-figlet “Ajustes finalizados…”
+figlet "ajustes finalizados"
 echo "Não se esqueça de instalar o gerenciador de extensões - o draw on your screen (windows+alt+d) "
 
 read -p "Você deseja instalar Rport ? [s/n]: " choice
 if [[ "$choice" == [Ss]* ]]; then
-./setup.sh
+./rport-installer.sh
 fi
